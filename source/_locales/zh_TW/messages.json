@@ -10,7 +10,7 @@
 "alltabsallwindows":{"message":"所有視窗"},
 "notificationTitle":{"message":"Copylinks++"},
 "notificationMessage":{"message":"數量"},
-"numb":{"message":"已複製連結"},
+"numb":{"message":"已複製連結數"},
 "fromTab": {"message":"，來自 "},
 "tabs": {"message":" 個分頁"},
 "all":{"message":"所有連結"},

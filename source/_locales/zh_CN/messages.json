@@ -10,7 +10,7 @@
 "alltabsallwindows":{"message":"所有窗口"},
 "notificationTitle":{"message":"Copylinks++"},
 "notificationMessage":{"message":"数量"},
-"numb":{"message":"已复制链接"},
+"numb":{"message":"已复制链接数"},
 "fromTab": {"message":"，来自 "},
 "tabs": {"message":" 个标签页"},
 "all":{"message":"所有链接"},
