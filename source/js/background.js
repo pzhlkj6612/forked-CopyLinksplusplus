@@ -125,10 +125,6 @@ var applyfilters = (allLinks, what2) => {
             var pattern = patternBase;
             var regex = new RegExp(pattern, 'i');
             break;
-        case 'torrentlisted':
-            var pattern = '(?:' + patternMag + '|' + patternBase + ')';
-            var regex = new RegExp(pattern, 'gim');
-            break;
         case 'regex':
             var pattern = patternReg;
             var regex = new RegExp(pattern, 'gim');
@@ -272,14 +268,6 @@ var createItems = async() => {
                 contexts: ['page']
             });
         };
-        if (CBtorrentlisted) {
-            var msgName = browser.i18n.getMessage('current') + ' - ' + browser.i18n.getMessage('torrentlisted');
-            browser.contextMenus.create({
-                id: 'clpp-current-torrentlisted',
-                title: msgName,
-                contexts: ['page']
-            });
-        };
         if (CBregex) {
             var msgName = browser.i18n.getMessage('current') + ' - ' + browser.i18n.getMessage('regex');
             browser.contextMenus.create({
@@ -315,14 +303,6 @@ var createItems = async() => {
                 contexts: ['page']
             });
         };
-        if (CBtorrentlisted) {
-            var msgName = browser.i18n.getMessage('alltabs') + ' - ' + browser.i18n.getMessage('torrentlisted');
-            browser.contextMenus.create({
-                id: 'clpp-alltabs-torrentlisted',
-                title: msgName,
-                contexts: ['page']
-            });
-        };
         if (CBregex) {
             var msgName = browser.i18n.getMessage('alltabs') + ' - ' + browser.i18n.getMessage('regex');
             browser.contextMenus.create({
@@ -354,14 +334,6 @@ var createItems = async() => {
             var msgName = browser.i18n.getMessage('alltabsallwindows') + ' - ' + browser.i18n.getMessage('listed');
             browser.contextMenus.create({
                 id: 'clpp-alltabsallwindows-listed',
-                title: msgName,
-                contexts: ['page']
-            });
-        };
-        if (CBtorrentlisted) {
-            var msgName = browser.i18n.getMessage('alltabsallwindows') + ' - ' + browser.i18n.getMessage('torrentlisted');
-            browser.contextMenus.create({
-                id: 'clpp-alltabsallwindows-torrentlisted',
                 title: msgName,
                 contexts: ['page']
             });
@@ -420,9 +392,6 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
     case 'clpp-current-listed':
         copyAllLinks('current', 'listed');
         break;
-    case 'clpp-current-torrentlisted':
-        copyAllLinks('current', 'torrentlisted');
-        break;
     case 'clpp-current-regex':
         copyAllLinks('current', 'regex');
         break;
@@ -435,9 +404,6 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
     case 'clpp-alltabs-listed':
         copyAllLinks('alltabs', 'listed');
         break;
-    case 'clpp-alltabs-torrentlisted':
-        copyAllLinks('alltabs', 'torrentlisted');
-        break;
     case 'clpp-alltabs-regex':
         copyAllLinks('alltabs', 'regex');
         break;
@@ -449,9 +415,6 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
         break;
     case 'clpp-alltabsallwindows-listed':
         copyAllLinks('alltabsallwindows', 'listed');
-        break;
-    case 'clpp-alltabsallwindows-torrentlisted':
-        copyAllLinks('alltabsallwindows', 'torrentlisted');
         break;
     case 'clpp-alltabsallwindows-regex':
         copyAllLinks('alltabsallwindows', 'regex');

@@ -17,7 +17,6 @@
 "torrent":{"message":"Link Magnet"},
 "listed":{"message":"Domini in elenco"},
 "domainlist":{"message":"Un dominio per linea"},
-"torrentlisted":{"message":"Link Magnet && Domini in elenco"},
 "filter":{"message":"Tipi di link:"},
 "context":{"message":"Menù contestuale"},
 "adddomain":{"message":"Aggiungi alla lista dei domini"},

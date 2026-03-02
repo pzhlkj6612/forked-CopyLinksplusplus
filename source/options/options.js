@@ -19,9 +19,6 @@ window.onload = () => {
     document.getElementById('CBlisted').onchange = () => {
         saveSettings();
     };
-    document.getElementById('CBtorrentlisted').onchange = () => {
-        saveSettings();
-    };
     document.getElementById('CBregex').onchange = () => {
         saveSettings();
     };
@@ -71,7 +68,6 @@ var updateUI = async () => {
         document.getElementById('CBall').checked = setting.CBall;
         document.getElementById('CBtorrent').checked = setting.CBtorrent;
         document.getElementById('CBlisted').checked = setting.CBlisted;
-        document.getElementById('CBtorrentlisted').checked = setting.CBtorrentlisted;
         document.getElementById('CBregex').checked = setting.CBregex;
 		document.getElementById('CBcurrent').checked = setting.CBcurrent;
         document.getElementById('CBalltabs').checked = setting.CBalltabs;
@@ -107,7 +103,6 @@ var saveSettings = () => {
         CBall: document.getElementById('CBall').checked,
         CBtorrent: document.getElementById('CBtorrent').checked,
         CBlisted: document.getElementById('CBlisted').checked,
-        CBtorrentlisted: document.getElementById('CBtorrentlisted').checked,
         CBregex: document.getElementById('CBregex').checked,
         CBcurrent: document.getElementById('CBcurrent').checked,
         CBalltabs: document.getElementById('CBalltabs').checked,

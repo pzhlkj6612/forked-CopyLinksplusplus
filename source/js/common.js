@@ -18,7 +18,6 @@ var ARRregexlist;
 var CBall;
 var CBtorrent;
 var CBlisted;
-var CBtorrentlisted;
 var CBregex;
 var CBcurrent;
 var CBalltabs;
@@ -44,7 +43,6 @@ const getSetting = async() => {
         CBall: true,
         CBtorrent: true,
         CBlisted: true,
-        CBtorrentlisted: false,
         CBregex: false,
         CBcurrent: true,
         CBalltabs: true,
@@ -68,7 +66,6 @@ const setVar = async() => {
     CBall = setting.CBall;
     CBtorrent = setting.CBtorrent;
     CBlisted = setting.CBlisted;
-    CBtorrentlisted = setting.CBtorrentlisted;
     CBregex = setting.CBregex;
     CBcurrent = setting.CBcurrent;
     CBalltabs = setting.CBalltabs;
@@ -112,7 +109,6 @@ const inidef = async() => {
         CBall: setting.CBall,
         CBtorrent: setting.CBtorrent,
         CBlisted: setting.CBlisted,
-        CBtorrentlisted: setting.CBtorrentlisted,
         CBregex: setting.CBregex,
         CBcurrent: setting.CBcurrent,
         CBalltabs: setting.CBalltabs,
