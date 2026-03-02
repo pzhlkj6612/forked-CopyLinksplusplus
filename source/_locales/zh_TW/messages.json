@@ -25,7 +25,7 @@
 "addlinksite":{"message":"將連結網域新增到清單"},
 "options":{"message":"開啟選項"},
 "optionsTitle":{"message":"Copylinks++ 選項"},
-"tab_button":{"message":"操作按鈕"},
+"tab_button":{"message":"工具列按鈕"},
 "tab_context":{"message":"右鍵選單"},
 "tab_listed":{"message":"網域清單"},
 "tab_regex":{"message":"正規表達式清單"},

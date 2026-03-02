@@ -25,7 +25,7 @@
 "addlinksite":{"message":"将链接域名添加到列表"},
 "options":{"message":"打开选项"},
 "optionsTitle":{"message":"Copylinks++ 选项"},
-"tab_button":{"message":"操作按钮"},
+"tab_button":{"message":"工具栏按钮"},
 "tab_context":{"message":"右键菜单"},
 "tab_listed":{"message":"域名列表"},
 "tab_regex":{"message":"正则表达式列表"},
